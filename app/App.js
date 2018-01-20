@@ -39,7 +39,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     padding: 20,
-    paddingTop: 40
+    ...Platform.select({
+      ios: { paddingTop: 40 },
+      android: {}
+    })
   },
   button: {
     width: "50%",
