@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import Sound from "react-native-sound";
 import SoundButton from "./SoundButton";
+import InfoIcon from "./InfoIcon";
 import sounds from "./sounds";
 
 export default class App extends Component {
@@ -24,6 +25,8 @@ export default class App extends Component {
             ]}
           />
         ))}
+
+        <InfoIcon style={styles.infoIcon} />
       </View>
     );
   }
@@ -36,7 +39,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     padding: 20,
-    paddingTop: 60
+    paddingTop: 40
   },
   button: {
     width: "50%",
@@ -48,5 +51,10 @@ const styles = StyleSheet.create({
   },
   evenButton: {
     paddingRight: 5
+  },
+  infoIcon: {
+    position: "absolute",
+    bottom: 20,
+    right: 20
   }
 });
