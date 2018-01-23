@@ -8,7 +8,7 @@ const sounds = [
     file: require("../sounds/Broody_Grunts_and_Pecks.mp3")
   },
   {
-    label: "Happr Grunts",
+    label: "Happy Grunts",
     file: require("../sounds/Happy_Grunts.mp3")
   },
   {
