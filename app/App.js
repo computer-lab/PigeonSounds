@@ -38,26 +38,26 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     flexDirection: "row",
     flexWrap: "wrap",
-    padding: 20,
+    padding: 12,
     ...Platform.select({
-      ios: { paddingTop: 40 },
+      ios: { paddingTop: 32 },
       android: {}
     })
   },
   button: {
     width: "50%",
     height: 100,
-    marginBottom: 10
+    marginBottom: 8
   },
   oddButton: {
-    paddingLeft: 5
+    paddingLeft: 4
   },
   evenButton: {
-    paddingRight: 5
+    paddingRight: 4
   },
   infoIcon: {
     position: "absolute",
-    bottom: 20,
-    right: 20
+    bottom: 12,
+    right: 12
   }
 });
