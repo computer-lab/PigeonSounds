@@ -9,9 +9,12 @@ export default class SoundButton extends Component {
   };
 
   componentDidMount() {
-    this.setState({
-      player: new Sound(this.props.sound.file, err => err && console.error(err))
-    });
+    const player = new Sound(
+      this.props.sound.filename,
+      Sound.MAIN_BUNDLE,
+      err => err && console.error(err)
+    );
+    this.setState({ player });
   }
 
   render() {

@@ -38,6 +38,13 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8A14B5C3F64A462F9AADA32F /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B09BCB1703145A3909811DC /* libRNSound.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C840A81F201988F00071B87E /* nest_call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A818201988EF0071B87E /* nest_call.mp3 */; };
+		C840A820201988F00071B87E /* happy_grunts.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A819201988F00071B87E /* happy_grunts.mp3 */; };
+		C840A821201988F00071B87E /* indigant_wing_slaps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81A201988F00071B87E /* indigant_wing_slaps.mp3 */; };
+		C840A822201988F00071B87E /* squeaker.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81B201988F00071B87E /* squeaker.mp3 */; };
+		C840A823201988F00071B87E /* alarmed_takeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81C201988F00071B87E /* alarmed_takeoff.mp3 */; };
+		C840A824201988F00071B87E /* broody_grunts_and_pecks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81D201988F00071B87E /* broody_grunts_and_pecks.mp3 */; };
+		C840A825201988F00071B87E /* strutting_call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81E201988F00071B87E /* strutting_call.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -321,6 +328,13 @@
 			remoteGlobalIDString = 19825A1E1BD4A89800EE0337;
 			remoteInfo = RNSound;
 		};
+		C8EA75B020182E4700E813C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C6BA8D8D0AF4FB3A4065E0F /* RNSound.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DCCC1751FDF4F93007C5315;
+			remoteInfo = "RNSound-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -352,6 +366,13 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9C6BA8D8D0AF4FB3A4065E0F /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		C840A818201988EF0071B87E /* nest_call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nest_call.mp3; path = ../sounds/nest_call.mp3; sourceTree = "<group>"; };
+		C840A819201988F00071B87E /* happy_grunts.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = happy_grunts.mp3; path = ../sounds/happy_grunts.mp3; sourceTree = "<group>"; };
+		C840A81A201988F00071B87E /* indigant_wing_slaps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = indigant_wing_slaps.mp3; path = ../sounds/indigant_wing_slaps.mp3; sourceTree = "<group>"; };
+		C840A81B201988F00071B87E /* squeaker.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = squeaker.mp3; path = ../sounds/squeaker.mp3; sourceTree = "<group>"; };
+		C840A81C201988F00071B87E /* alarmed_takeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarmed_takeoff.mp3; path = ../sounds/alarmed_takeoff.mp3; sourceTree = "<group>"; };
+		C840A81D201988F00071B87E /* broody_grunts_and_pecks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = broody_grunts_and_pecks.mp3; path = ../sounds/broody_grunts_and_pecks.mp3; sourceTree = "<group>"; };
+		C840A81E201988F00071B87E /* strutting_call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = strutting_call.mp3; path = ../sounds/strutting_call.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -536,6 +557,13 @@
 		562DA2720D444F7785D34359 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C840A81C201988F00071B87E /* alarmed_takeoff.mp3 */,
+				C840A81D201988F00071B87E /* broody_grunts_and_pecks.mp3 */,
+				C840A819201988F00071B87E /* happy_grunts.mp3 */,
+				C840A81A201988F00071B87E /* indigant_wing_slaps.mp3 */,
+				C840A818201988EF0071B87E /* nest_call.mp3 */,
+				C840A81B201988F00071B87E /* squeaker.mp3 */,
+				C840A81E201988F00071B87E /* strutting_call.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -635,6 +663,7 @@
 			isa = PBXGroup;
 			children = (
 				C89931392013C53B00A8DAAA /* libRNSound.a */,
+				C8EA75B120182E4700E813C0 /* libRNSound-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -725,7 +754,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = FXG6WL4BFK;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = FXG6WL4BFK;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1080,6 +1113,13 @@
 			remoteRef = C89931382013C53B00A8DAAA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		C8EA75B120182E4700E813C0 /* libRNSound-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSound-tvOS.a";
+			remoteRef = C8EA75B020182E4700E813C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1095,7 +1135,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C840A824201988F00071B87E /* broody_grunts_and_pecks.mp3 in Resources */,
+				C840A81F201988F00071B87E /* nest_call.mp3 in Resources */,
+				C840A823201988F00071B87E /* alarmed_takeoff.mp3 in Resources */,
+				C840A820201988F00071B87E /* happy_grunts.mp3 in Resources */,
+				C840A825201988F00071B87E /* strutting_call.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				C840A821201988F00071B87E /* indigant_wing_slaps.mp3 in Resources */,
+				C840A822201988F00071B87E /* squeaker.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1214,6 +1261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FXG6WL4BFK;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1243,6 +1291,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = FXG6WL4BFK;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
@@ -1269,6 +1318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = FXG6WL4BFK;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
@@ -1291,6 +1341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXG6WL4BFK;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",

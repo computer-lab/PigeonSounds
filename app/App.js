@@ -17,7 +17,7 @@ export default class App extends Component {
       <View style={styles.container}>
         {sounds.map((s, i) => (
           <SoundButton
-            key={s.file}
+            key={s.filename}
             sound={s}
             style={[
               styles.button,
