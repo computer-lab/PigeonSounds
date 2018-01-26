@@ -13,11 +13,15 @@ const sounds = [
   },
   {
     label: "Indignant Wing Slaps",
-    filename: "indigant_wing_slaps.mp3"
+    filename: "indignant_wing_slaps.mp3"
   },
   {
     label: "Nest Call",
     filename: "nest_call.mp3"
+  },
+  {
+    label: "Sad Crying",
+    filename: "sad_crying.mp3"
   },
   {
     label: "Squeaker",
@@ -26,7 +30,7 @@ const sounds = [
   {
     label: "Strutting Call",
     filename: "strutting_call.mp3"
-  }
+  },
 ];
 
 export default sounds;

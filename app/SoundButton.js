@@ -64,12 +64,12 @@ const styles = StyleSheet.create({
     padding: 20
   },
   buttonPlaying: {
-    borderColor: "red"
+    borderColor: "#c82a45"
   },
   text: {
     textAlign: "center"
   },
   buttonPlayingText: {
-    color: "red"
+    color: "#c82a45"
   }
 });

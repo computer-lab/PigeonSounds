@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { Platform, StyleSheet, Text, View, Dimensions } from "react-native";
 import Sound from "react-native-sound";
 import SoundButton from "./SoundButton";
 import InfoIcon from "./InfoIcon";
@@ -10,9 +10,8 @@ export default class App extends Component {
     soundPlayers: null
   };
 
-  componentDidMount() {}
-
   render() {
+    const { dimensions } = this.state
     return (
       <View style={styles.container}>
         {sounds.map((s, i) => (
@@ -26,6 +25,9 @@ export default class App extends Component {
           />
         ))}
 
+        <Text style={styles.infoText}>
+          Pigeon Sounds <Text style={{color: '#b3862d'}}>HD</Text>
+        </Text>
         <InfoIcon style={styles.infoIcon} />
       </View>
     );
@@ -54,6 +56,13 @@ const styles = StyleSheet.create({
   },
   evenButton: {
     paddingRight: 4
+  },
+  infoText: {
+    color: "grey",
+    fontSize: 11,
+    position: "absolute",
+    bottom: 12,
+    left: 12
   },
   infoIcon: {
     position: "absolute",
