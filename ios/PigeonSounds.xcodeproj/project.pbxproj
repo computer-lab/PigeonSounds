@@ -37,10 +37,11 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8A14B5C3F64A462F9AADA32F /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B09BCB1703145A3909811DC /* libRNSound.a */; };
+		9556780E2027398F00509C63 /* sad_crying.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9556780D2027398F00509C63 /* sad_crying.mp3 */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		C840A81F201988F00071B87E /* nest_call.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A818201988EF0071B87E /* nest_call.mp3 */; };
 		C840A820201988F00071B87E /* happy_grunts.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A819201988F00071B87E /* happy_grunts.mp3 */; };
-		C840A821201988F00071B87E /* indigant_wing_slaps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81A201988F00071B87E /* indigant_wing_slaps.mp3 */; };
+		C840A821201988F00071B87E /* indignant_wing_slaps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81A201988F00071B87E /* indignant_wing_slaps.mp3 */; };
 		C840A822201988F00071B87E /* squeaker.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81B201988F00071B87E /* squeaker.mp3 */; };
 		C840A823201988F00071B87E /* alarmed_takeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81C201988F00071B87E /* alarmed_takeoff.mp3 */; };
 		C840A824201988F00071B87E /* broody_grunts_and_pecks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C840A81D201988F00071B87E /* broody_grunts_and_pecks.mp3 */; };
@@ -328,13 +329,6 @@
 			remoteGlobalIDString = 19825A1E1BD4A89800EE0337;
 			remoteInfo = RNSound;
 		};
-		C8EA75B020182E4700E813C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9C6BA8D8D0AF4FB3A4065E0F /* RNSound.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2DCCC1751FDF4F93007C5315;
-			remoteInfo = "RNSound-tvOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -364,11 +358,12 @@
 		6B09BCB1703145A3909811DC /* libRNSound.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSound.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		9556780D2027398F00509C63 /* sad_crying.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sad_crying.mp3; path = ../sounds/sad_crying.mp3; sourceTree = "<group>"; };
 		9C6BA8D8D0AF4FB3A4065E0F /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		C840A818201988EF0071B87E /* nest_call.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nest_call.mp3; path = ../sounds/nest_call.mp3; sourceTree = "<group>"; };
 		C840A819201988F00071B87E /* happy_grunts.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = happy_grunts.mp3; path = ../sounds/happy_grunts.mp3; sourceTree = "<group>"; };
-		C840A81A201988F00071B87E /* indigant_wing_slaps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = indigant_wing_slaps.mp3; path = ../sounds/indigant_wing_slaps.mp3; sourceTree = "<group>"; };
+		C840A81A201988F00071B87E /* indignant_wing_slaps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = indignant_wing_slaps.mp3; path = ../sounds/indignant_wing_slaps.mp3; sourceTree = "<group>"; };
 		C840A81B201988F00071B87E /* squeaker.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = squeaker.mp3; path = ../sounds/squeaker.mp3; sourceTree = "<group>"; };
 		C840A81C201988F00071B87E /* alarmed_takeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarmed_takeoff.mp3; path = ../sounds/alarmed_takeoff.mp3; sourceTree = "<group>"; };
 		C840A81D201988F00071B87E /* broody_grunts_and_pecks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = broody_grunts_and_pecks.mp3; path = ../sounds/broody_grunts_and_pecks.mp3; sourceTree = "<group>"; };
@@ -557,10 +552,11 @@
 		562DA2720D444F7785D34359 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9556780D2027398F00509C63 /* sad_crying.mp3 */,
 				C840A81C201988F00071B87E /* alarmed_takeoff.mp3 */,
 				C840A81D201988F00071B87E /* broody_grunts_and_pecks.mp3 */,
 				C840A819201988F00071B87E /* happy_grunts.mp3 */,
-				C840A81A201988F00071B87E /* indigant_wing_slaps.mp3 */,
+				C840A81A201988F00071B87E /* indignant_wing_slaps.mp3 */,
 				C840A818201988EF0071B87E /* nest_call.mp3 */,
 				C840A81B201988F00071B87E /* squeaker.mp3 */,
 				C840A81E201988F00071B87E /* strutting_call.mp3 */,
@@ -663,7 +659,6 @@
 			isa = PBXGroup;
 			children = (
 				C89931392013C53B00A8DAAA /* libRNSound.a */,
-				C8EA75B120182E4700E813C0 /* libRNSound-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1113,13 +1108,6 @@
 			remoteRef = C89931382013C53B00A8DAAA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C8EA75B120182E4700E813C0 /* libRNSound-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libRNSound-tvOS.a";
-			remoteRef = C8EA75B020182E4700E813C0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1141,7 +1129,8 @@
 				C840A820201988F00071B87E /* happy_grunts.mp3 in Resources */,
 				C840A825201988F00071B87E /* strutting_call.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				C840A821201988F00071B87E /* indigant_wing_slaps.mp3 in Resources */,
+				9556780E2027398F00509C63 /* sad_crying.mp3 in Resources */,
+				C840A821201988F00071B87E /* indignant_wing_slaps.mp3 in Resources */,
 				C840A822201988F00071B87E /* squeaker.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
