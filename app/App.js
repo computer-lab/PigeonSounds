@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View, Dimensions } from "react-native";
+import { Platform, StyleSheet, Text, ScrollView, View, StatusBar } from "react-native";
 import Sound from "react-native-sound";
 import SoundButton from "./SoundButton";
 import InfoIcon from "./InfoIcon";
@@ -7,23 +7,27 @@ import sounds from "./sounds";
 
 export default class App extends Component {
   state = {
-    soundPlayers: null
+    soundPlayers: null,
   };
 
   render() {
-    const { dimensions } = this.state
     return (
       <View style={styles.container}>
-        {sounds.map((s, i) => (
-          <SoundButton
-            key={s.filename}
-            sound={s}
-            style={[
-              styles.button,
-              i % 2 === 0 ? styles.evenButton : styles.oddButton
-            ]}
-          />
-        ))}
+        <StatusBar />
+        <ScrollView>
+        <View style={styles.soundsContainer}>
+          {sounds.map((s, i) => (
+            <SoundButton
+              key={s.filename}
+              sound={s}
+              style={[
+                styles.button,
+                i % 2 === 0 ? styles.evenButton : styles.oddButton
+              ]}
+            />
+          ))}
+        </View>
+      </ScrollView>
 
         <Text style={styles.infoText}>
           Pigeon Sounds <Text style={{color: '#b3862d'}}>HD</Text>
@@ -37,14 +41,17 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 12,
+    ...Platform.select({
+      ios: { paddingTop: 32, paddingBottom: 32 },
+      android: { paddingBottom: 32 }
+    })
+  },
+  soundsContainer: {
+    flex: 1,
     justifyContent: "flex-start",
     flexDirection: "row",
     flexWrap: "wrap",
-    padding: 12,
-    ...Platform.select({
-      ios: { paddingTop: 32 },
-      android: {}
-    })
   },
   button: {
     width: "50%",
