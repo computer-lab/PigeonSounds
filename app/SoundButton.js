@@ -5,7 +5,6 @@ import Sound from "react-native-sound";
 export default class SoundButton extends Component {
   state = {
     player: null,
-    restarting: false,
     playing: false
   };
 
@@ -39,12 +38,13 @@ export default class SoundButton extends Component {
   }
 
   handlePress = () => {
-    if (!this.state.player || this.state.restarting) return;
-    this.setState({ restarting: true });
-    this.state.player.stop(() => {
-      this.setState({ restarting: false, playing: true });
+    if (!this.state.player) return;
+    if (this.state.playing) {
+      this.state.player.stop(this.handlePlayFinished)
+    } else {
+      this.setState({ playing: true });
       this.state.player.play(this.handlePlayFinished);
-    });
+    }
   };
 
   handlePlayFinished = () => {

@@ -4,6 +4,7 @@ import Sound from "react-native-sound";
 import SoundButton from "./SoundButton";
 import InfoIcon from "./InfoIcon";
 import sounds from "./sounds";
+Sound.setCategory('Playback');
 
 export default class App extends Component {
   state = {
